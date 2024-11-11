@@ -1,0 +1,14 @@
+*
+body {
+    margin: 0;
+    background-color: #f4f2e9; /* Baggrundsfarve */
+    color: #44519f;
+  }
+
+.cake-container {
+    display: grid;
+}
+
+img {
+    width: 30%;
+}
