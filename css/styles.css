@@ -1,0 +1,21 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #3A3A3A;
+    background-color: #F5F0E1; /*baggrundsfarve/
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+background-color: #ECE6D9;
+color:#333
+padding: 15px 0;
+text-align: center;
+}
+nav a{
+color: #333;
+margin: 0 10px;
+text-decoration:none;
+font-weight:bold;
+font-size: 16px;
+}
