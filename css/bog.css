@@ -16,9 +16,19 @@ h2 {
     font-size: medium;
 }
 
-.bog-billede {
+/*.bog-billede {
     width: 20rem;
     padding: 2rem 0;
+}
+*/
+
+.bog-billede {
+    width: 100%;       /* Skalerer billedet til at fylde 100% af sin containerbredde */
+    max-width: 400px;  /* Sætter en maksimal bredde */
+    height: auto;      /* Bevarer billedets naturlige højde-bredde forhold */
+    display: block;    /* Fjerner eventuel ekstra margin */
+    margin: 0 auto;    /* Centrerer billedet, hvis der er plads */
+    object-fit: cover; /* Sikrer, at billedet beskæres proportionalt */
 }
 
 button {
@@ -62,10 +72,34 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* To kolonner */
+        gap: 2rem;
+    }
 
+    .bog-billede-sektion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bog-billede {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .tekst-sektion {
+        padding: 1rem;
+    }
 }
 
 /* Desktop Layout */
 @media (min-width: 1024px) {
- 
+    .main-content {
+        grid-template-columns: 1fr 1fr; /* Justerer til lige kolonner på større skærme */
+    }
+
+    .tekst-sektion {
+        font-size: 1.1rem; /* Justerer tekststørrelse */
+    }
 }
