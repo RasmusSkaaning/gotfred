@@ -1,12 +1,76 @@
-*
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+body {
     background-color: #f4f2e9; /* Baggrundsfarve */
     color: #44519f;
+    font-family: 'work sans';
+    font-weight: 200;
+    font-size: 14px;
   }
+
+
+@media screen and (max-width: 768px ) {
+
+    h1 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+h5 {
+    font-weight: 300;
+}
 
 .grid-cakes {
     display: grid;
-    grid-template-columns: 600px 12px;
+}
+
+img {
+    width: 9em;
+}
+}
+
+header {
+    line-height: 3em;
+}
+
+.overskrift {
+    line-height: 1.8em;
+}
+
+.menu-cakes {
+    line-height: 1.8em;
+}
+
+
+
+
+.menu-coffee {
+    line-height: 1.8em;
+    margin: 0 auto; /* Centrerer artiklen på siden */
+}
+
+.coffee {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.price {
+    display: inline-block;
+    text-align: right;
+}
+
+/* Styling af drikkevarer og priser */
+.item {
+    display: grid;
+    grid-template-columns:  18% 30%;
+    gap: 5px;
     
 }
