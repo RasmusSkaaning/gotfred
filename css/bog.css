@@ -2,10 +2,47 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Work Sans';
-    font-weight: 550;
+    font-family: "Work Sans";
+}
+
+h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: medium;
+}
+
+.bog-billede {
+    width: 20rem;
+    padding: 2rem 0;
+}
+
+button {
+    background-color: #44519f;
+    color:#f4f2e9;
+    padding: 1rem;
+    margin: 1.5rem 0;
 }
 
 body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #44519f;
+    font-family: 'Work Sans';
+    font-weight: 300;
     background-color: #f4f2e9;
+}
+
+.text {
+    font-size: large;
+    line-height: 20px;
+    padding: 1rem 0;
+}
+
+ul {
+    list-style: none;
 }
