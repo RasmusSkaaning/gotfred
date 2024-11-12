@@ -22,15 +22,22 @@ h2 {
 }
 
 button {
+    padding: 30px;
     background-color: #44519f;
     color:#f4f2e9;
+    font-size: 1rem;
     padding: 1rem;
     margin: 1.5rem 0;
+    border: none;
+    cursor: pointer;
+    width: 11rem;
+    height: 3.5rem;
 }
 
 body {
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-bottom: 3rem;
     color: #44519f;
     font-family: 'Work Sans';
     font-weight: 300;
@@ -39,10 +46,26 @@ body {
 
 .text {
     font-size: large;
-    line-height: 20px;
+    line-height: 25px;
     padding: 1rem 0;
 }
 
 ul {
     list-style: none;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.overlinje {
+    font-size: large;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+ 
 }
