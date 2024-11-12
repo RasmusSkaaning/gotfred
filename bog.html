@@ -15,6 +15,52 @@
 
 <body>
     <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo">
+            </a>
+    
+            <!-- Burger-menu checkbox og ikon -->
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <!-- Navigation menu -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="#menu">MENU & BESTILLING</a>
+                    <ul class="dropdown">
+                        <li><span>Arrangement kager</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#bog">VORES BOG</a>
+                </li>
+                <li>
+                    <a href="#om">OM GOTFRED</a>
+                    <ul class="dropdown">
+                        <li><span>Gotfreds historie</span></li>
+                        <li><span>Kontakt os</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                    <ul class="dropdown">
+                        <li><span>Hvordan bestiller man</span></li>
+                        <li><span>Åbningstider og siddepladser i caféen</span></li>
+                        <li><span>Allergener</span></li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <section class="navbar-icon">
+                <img src="/img/forside/ovn.webp" alt="Ovn Logo">
+            </section>
+        </nav>
+
         <section>
         <h1>NORDISK PATISSERIE</h1>
         <h2>af Sonia Pedersen og Sofie Jakobsen</h2>
@@ -25,15 +71,15 @@
             <section class="bog-billede-sektion">
                 <img class="bog-billede" src="img/bog/nordisk-patisserie.webp" alt="billede af bog Nordisk Patisserie">
 
+                <p class="pris">Pris 279,00 DKK</p>
+                <button type="button">LÆG I OVN</button>
+
                 <ul>
                     <li class="overlinje">Fakta</li>
                     <li>Sideantal: 132</li>
                     <li>Sprog: Dansk</li>
                     <li>Udgivelse: 2023</li>
                 </ul>
-
-                <p>Pris 279,00 DKK</p>
-                <button type="button">LÆG I OVN</button>
             </section>
             
             <section class="tekst-sektion">
@@ -49,6 +95,6 @@
             </section>
 
     </main>
-    
+
 </body>
 </html>
