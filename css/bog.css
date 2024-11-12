@@ -68,16 +68,23 @@ ul {
 
     body {
         margin-right: 0rem;
+        margin-left: 6rem;
     }
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
-        gap: 3rem;
+        grid-template-columns: 1.2fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        gap: 1rem;
         margin-right: 5rem;
+        margin-top: 1rem;
     }
 
     .text {
         font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .tekst-sektion {
+        padding-top: 10px;
     }
 
     /* Billedsektionen tager kun én kolonne */
@@ -89,13 +96,22 @@ ul {
 }
 /* Desktop Layout */
 @media (min-width: 1024px) {
-
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        grid-template-columns: 1fr 1.5fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        gap: 0;
     }
 
     h2 {
         font-size: larger;
+    }
+
+    .tekst-sektion {
+        max-width: 500px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 }
