@@ -1,12 +1,141 @@
-*
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+body {
     background-color: #f4f2e9; /* Baggrundsfarve */
     color: #44519f;
+    font-family: 'work sans';
+    font-weight: 200;
+    font-size: 17px;
   }
+
+
+
+header {
+    padding: 14px;
+    font-size: 16px;
+}
+
+.overskrift {
+    line-height: 1.9em;
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 768px ) {
+
+h1 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 450;
+    font-size: 15px;
+}
 
 .grid-cakes {
     display: grid;
-    grid-template-columns: 600px 12px;
+    grid-template-columns: repeat(2, 1fr); /* 3 kolonner */
+    gap: 30px;
+    padding: 20px;
+}
+
+.grid-coffee {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 kolonner */
+    gap: 30px;
+    padding: 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure p:first-child {
+    font-size: 1.2em;
+}
+
+figure p:nth-child(3) {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+figure p:nth-child(3) {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Style til vælg-knappen */
+.choose-button {
+    font-size: 1em;
+    font-weight: bold;
+    color: #334e92;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+figure img {
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Justering af mellemrum og margener */
+.grid-cakes p {
+    margin: 0;
+}
+
+
+
+
+.menu-cakes {
+    line-height: 1.8em;
+    padding: 14px;
+}
+
+.menu-coffee {
+    line-height: 1.8em;
+    margin: 0 auto; /* Centrerer artiklen på siden */
+    padding: 14px;
+}
+
+.coffee {
+    display: inline-block;
+}
+
+.price {
+    display: inline-block;
+    text-align: right;
+}
+
+/* Styling af drikkevarer og priser */
+.item {
+    display: grid;
+    grid-template-columns:  19% 30%;
+    gap: 5px;
     
+}
 }
