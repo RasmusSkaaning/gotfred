@@ -1,31 +1,26 @@
-*
 body {
     margin: 0;
-    font-family:  Work Sans, light;
-    background-color: #f4f2e9; /* Baggrundsfarve */
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Holder indholdet til venstre */
+    padding: 0;
+    font-family: Work Sans, light;
     background-color: #f4f2e9;
-    padding: 20px 20px; /* Reducerer den horisontale padding */
 }
 
-.navbar-logo {
-    flex: 0 0 auto; /* Holder logoet uden ekstra plads */
-    margin-right: 20px; /* Laver en afstand mellem logoet og menuen */
+.navbar {
+    display: flex;
+    align-items: center; /* Centrerer alle elementer vertikalt i navbaren */
+    justify-content: space-between;
+    background-color: #f4f2e9;
+    padding: 10px 20px;
 }
 
 .navbar-logo img {
-    height: 175px;
+    height: 60px; /* Juster om nødvendigt */
 }
 
 .navbar-menu {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     list-style: none;
     margin: 0;
@@ -37,14 +32,10 @@ body {
     color: #333399;
     font-weight: bold;
     font-size: 20px;
-}
-
-.navbar-icon {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: flex-end;
+    line-height: 60px; /* Matcher højden på logoet for vertikal justering */
 }
 
 .navbar-icon img {
-    height: 100px;
+    height: 60px; /* Juster om nødvendigt for at matche logoet */
 }
+
