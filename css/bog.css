@@ -7,6 +7,7 @@
 
 h1 {
     font-family: "Work Sans";
+    font-size: 3rem;
     font-weight: 600;
     padding: 8px 0;
 }
@@ -16,19 +17,10 @@ h2 {
     font-size: medium;
 }
 
-/*.bog-billede {
+.bog-billede {
     width: 20rem;
     padding: 2rem 0;
-}
-*/
-
-.bog-billede {
-    width: 100%;       /* Skalerer billedet til at fylde 100% af sin containerbredde */
-    max-width: 400px;  /* Sætter en maksimal bredde */
-    height: auto;      /* Bevarer billedets naturlige højde-bredde forhold */
-    display: block;    /* Fjerner eventuel ekstra margin */
-    margin: 0 auto;    /* Centrerer billedet, hvis der er plads */
-    object-fit: cover; /* Sikrer, at billedet beskæres proportionalt */
+    padding-right: 2rem;
 }
 
 button {
@@ -56,13 +48,14 @@ body {
 
 .text {
     font-size: large;
-    line-height: 25px;
+    line-height: 30px;
     padding: 1rem 0;
 }
 
 ul {
+    font-size: large;
     list-style: none;
-    line-height: 25px;
+    line-height: 30px;
     padding-bottom: 20px;
 }
 
@@ -72,34 +65,37 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .main-content {
+
+    body {
+        margin-right: 0rem;
+    }
+    main {
         display: grid;
-        grid-template-columns: 1fr 2fr; /* To kolonner */
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        gap: 3rem;
+        margin-right: 5rem;
     }
 
-    .bog-billede-sektion {
-        display: flex;
-        justify-content: center;
+    .text {
+        font-size: 1rem;
     }
 
+    /* Billedsektionen tager kun én kolonne */
     .bog-billede {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
     }
 
-    .tekst-sektion {
-        padding: 1rem;
-    }
 }
-
 /* Desktop Layout */
 @media (min-width: 1024px) {
-    .main-content {
-        grid-template-columns: 1fr 1fr; /* Justerer til lige kolonner på større skærme */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
     }
 
-    .tekst-sektion {
-        font-size: 1.1rem; /* Justerer tekststørrelse */
+    h2 {
+        font-size: larger;
     }
 }
