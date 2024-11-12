@@ -7,15 +7,15 @@ body {
   }
 
 header {
-background-color: #ECE6D9;
-color:#333
-padding: 15px 0;
-text-align: center;
-}
-nav a{
-color: #333;
-margin: 0 10px;
-text-decoration:none;
-font-weight:bold;
-font-size: 16px;
-}
+ background-color: #ECE6D9;
+ color:#333
+ padding: 15px 0;
+ text-align: center;
+ }
+ nav a{
+ color: #333;
+ margin: 0 10px;
+ text-decoration:none;
+ font-weight:bold;
+ font-size: 16px;
+ }
