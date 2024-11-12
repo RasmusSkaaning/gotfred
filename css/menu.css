@@ -16,7 +16,7 @@ body {
 
 @media screen and (max-width: 768px ) {
 
-    h1 {
+h1 {
     font-weight: 500;
 }
 
@@ -30,12 +30,56 @@ h5 {
 
 .grid-cakes {
     display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 30px;
+    padding: 20px;
 }
 
-img {
-    width: 9em;
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+figure p:first-child {
+    font-size: 1.2em;
 }
+
+figure p:nth-child(3) {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+figure p:nth-child(3) {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Style til vælg-knappen */
+.choose-button {
+    font-size: 1em;
+    font-weight: bold;
+    color: #334e92;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+figure img {
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Justering af mellemrum og margener */
+.grid-cakes p {
+    margin: 0;
+}
+
+
+
+
+
 
 header {
     line-height: 3em;
@@ -47,14 +91,13 @@ header {
 
 .menu-cakes {
     line-height: 1.8em;
+    padding: 14px;
 }
-
-
-
 
 .menu-coffee {
     line-height: 1.8em;
     margin: 0 auto; /* Centrerer artiklen på siden */
+    padding: 14px;
 }
 
 .coffee {
@@ -70,7 +113,8 @@ header {
 /* Styling af drikkevarer og priser */
 .item {
     display: grid;
-    grid-template-columns:  18% 30%;
+    grid-template-columns:  19% 30%;
     gap: 5px;
     
+}
 }
