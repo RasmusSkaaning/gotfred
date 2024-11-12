@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gotfred Navbar</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/omgotfred.css">
-      </head>
-      <body>
-        <nav class="navbar">
-          <div class="navbar-logo">
-            <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo"> 
-          </div>
-          <ul class="navbar-menu">
-            <li><a href="#menu">MENU & BESTILLING</a></li>
-            <li><a href="#bog">VORES BOG</a></li>
-            <li><a href="#om">OM GOTFRED</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-          <div class="navbar-icon">
-            <img src="/img/forside/ovn.webp" alt="Ovn Logo"> 
-          </div>
-        </nav>
-      </body>
-      </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotfred Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/omgotfred.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo">
+        </a>
+        <ul class="navbar-menu">
+            <li>
+                <a href="#menu">MENU & BESTILLING</a>
+                <ul class="dropdown">
+                    <li><span>Arrangement kager</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bog">VORES BOG</a>
+            </li>
+            <li>
+                <a href="#om">OM GOTFRED</a>
+                <ul class="dropdown">
+                    <li><span>Gotfreds historie</span></li>
+                    <li><span>Kontakt os</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#faq">FAQ</a>
+                <ul class="dropdown">
+                    <li><span>Hvordan bestiller man</span></li>
+                    <li><span>Åbningstider og siddepladser i caféen</span></li>
+                    <li><span>Allergener</span></li>
+                </ul>
+            </li>
+        </ul>
+        <sektion class="navbar-icon">
+            <img src="/img/forside/ovn.webp" alt="Ovn Logo">
+        </sektion>
+    </nav>
+</body>
+</html>
