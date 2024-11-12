@@ -5,17 +5,32 @@ body {
     margin: 0;
     padding: 0;
   }
-
 header {
-background-color: #ECE6D9;
-color:#333
-padding: 15px 0;
-text-align: center;
+ background-color: #ECE6D9;
+ color:#333
+ padding: 15px 0;
+ text-align: center;
+ }
+ nav a {
+ color: #333;
+ margin: 0 10px;
+ text-decoration:none;
+ font-weight:bold;
+ font-size: 16px;
+ }
+ .logo { 
+ height 40px
+ vertical-align:middle
+ margin-right: 10px
+ }
+ .hero img { 
+ width : 100%;
+ height: auto;
+ }
+ main {
+ max-width: 1000px;
+ margin: auto;
+ padding: 20px;
 }
-nav a{
-color: #333;
-margin: 0 10px;
-text-decoration:none;
-font-weight:bold;
-font-size: 16px;
-}
+ 
+
