@@ -5,10 +5,8 @@ body {
     color: #44519f;
   }
 
-.cake-container {
+.grid-cakes {
     display: grid;
-}
-
-img {
-    width: 30%;
+    grid-template-columns: 600px 12px;
+    
 }
