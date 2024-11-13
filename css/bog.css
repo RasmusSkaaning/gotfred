@@ -15,6 +15,12 @@
     padding-top: 20px;
     padding-bottom: 50px;
     padding-right: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Sørger for, at navbaren er øverst i stacking order */
+    background-color: #f4f2e9; /* Sørg for, at baggrunden er ensartet */
+    padding-top: 20px;
+    padding-bottom: 20px; /* Justér padding for at reducere højden, når den er sticky */
 }
 
 .navbar-logo img {
@@ -99,7 +105,6 @@
     border-radius: 10px;
 }
 
-
 /* Tablet og mobil: Skift til burger-menu */
 @media (max-width: 1024px) {
     .navbar-menu {
@@ -142,7 +147,7 @@
 }
 
 /* Mobil justering */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
     }
@@ -161,6 +166,7 @@
         white-space: nowrap;
     }
 }
+
 
 h1 {
     font-family: "Work Sans";
@@ -232,9 +238,10 @@ ul {
         margin-right: 0rem;
         margin-left: 6rem;
     }
+
     main {
         display: grid;
-        grid-template-columns: 1.2fr 1fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        grid-template-columns: 1.2fr 1fr; /* To kolonner*/
         gap: 1rem;
         margin-right: 5rem;
         margin-top: 1rem;
@@ -254,8 +261,10 @@ ul {
         width: 100%;
         max-width: 400px;
     }
+   
 
 }
+
 /* Desktop Layout */
 @media (min-width: 1024px) {
     main {

@@ -14,9 +14,56 @@
 </head>
 
 <body>
-<header>
-<h1>Kager</h1>
-</header>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo">
+            </a>
+
+            <!-- Burger-menu checkbox og ikon -->
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation menu -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="menu.html">MENU & BESTILLING</a>
+                    <ul class="dropdown">
+                        <li><span>Arrangement kager</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bog.html">VORES BOG</a>
+                </li>
+                <li>
+                    <a href="omgotfred.html">OM GOTFRED</a>
+                    <ul class="dropdown">
+                        <li><span>Gotfreds historie</span></li>
+                        <li><span>Kontakt os</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                    <ul class="dropdown">
+                        <li><span>Hvordan bestiller man</span></li>
+                        <li><span>Åbningstider og siddepladser i caféen</span></li>
+                        <li><span>Allergener</span></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <section class="navbar-icon">
+                <img src="/img/forside/ovn.webp" alt="Ovn Logo">
+            </section>
+        </nav>
+
+
+    <h1>Kager</h1>
+    </header>
 
 <aside class="overskrift">
 <h3>Online forudbestilling til afhentning - min 4. stk</h3>
@@ -68,7 +115,9 @@
         </figure>
 </section>
 
+<aside class="drikke-overskrift">
 <h4>Drikke  (kun i caféen)</h4>
+</aside>
 
 <section class="grid-coffee">
     <figure class="coffee-1">
@@ -103,16 +152,18 @@
     </section>
 
 <section>
-    <article class="menu-cakes">
+    <article class="menu-cake">
         <h4>Menu</h4>
         <h5>KAGER  -  52 kr</h5>
         <h5>TILBUD i café, Kaffe & kage - 89 kr </h5>
-        
-        <p>01. Pærekage
+    </article>
+    
+    <article class="menu-cakes">
+        <p class="text">01. Pærekage
         Kransekage, pear compote, ginger, 
         salted caramel mousse, vanilla glaze</p>
 
-        <p>02. Hindbaertaerte
+        <p class="text">02. Hindbaertaerte
         Almond, raspberries, white chocolate</p>
         
         <p>03. Fragilité
@@ -131,61 +182,63 @@
 
     <article class="menu-coffee">
         <h4>Drikke</h4>
-        <aside class="item">
-            <p class="coffee">07. Chai latte</p>
-            <p class="price">49 kr</p>
-        </aside>
+        <aside class="undermenu-coffee">
+            <aside class="item">
+                <p class="coffee">07. Chai latte</p>
+                <p class="price">49 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">08. Flat white</p>
-            <p class="price">43 kr</p>
-        </aside>
-        
-        <aside class="item">
-            <p class="coffee">09. Cappuccino</p>
-            <p class="price">45 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">08. Flat white</p>
+                <p class="price">43 kr</p>
+            </aside>
+            
+            <aside class="item">
+                <p class="coffee">09. Cappuccino</p>
+                <p class="price">45 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">10. Cafe latte</p>
-            <p class="price">47 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">10. Cafe latte</p>
+                <p class="price">47 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">11. Americano</p>
-            <p class="price">39 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">11. Americano</p>
+                <p class="price">39 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">12. Matcha latte</p>
-            <p class="price">46 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">12. Matcha latte</p>
+                <p class="price">46 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">13. Te</p>
-            <p class="price">32 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">13. Te</p>
+                <p class="price">32 kr</p>
+            </aside>
+        <aside class="over-item">
+            <aside class="item">
+                <p cslass="coffee">Citronlemonade</p>
+                <p class="price">40 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p cslass="coffee">Citronlemonade</p>
-            <p class="price">40 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">Rabarberlemonade</p>
+                <p class="price">40 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">Rabarberlemonade</p>
-            <p class="price">40 kr</p>
-        </aside>
+            <aside class="item">
+                <p class="coffee">Æblemost</p>
+                <p class="price">40 kr</p>
+            </aside>
 
-        <aside class="item">
-            <p class="coffee">Æblemost</p>
-            <p class="price">40 kr</p>
+            <aside class="item">
+                <p class="coffee"> Fersken-iste</p>
+                <p class="price">40 kr</p>
         </aside>
-
-        <aside class="item">
-            <p class="coffee"> Fersken-iste</p>
-            <p class="price">40 kr</p>
+            </aside>
         </aside>
-
     </article>
 
 
