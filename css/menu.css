@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #f4f2e9;
-    padding: 25px;
+    padding: 25px 25px 25px 3.8em;
 }
 
 .navbar-logo img {
@@ -317,7 +317,7 @@ figure img {
 @media screen and (min-width: 768px ) {
     
     h1 {
-        padding: 30px 0px 25px 35px;
+        padding: 30px 0px 25px 40px;
         font-size: 50px;
         font-weight: 500;
     }
@@ -452,14 +452,14 @@ figure img {
 
 @media screen and (min-width: 1023px ) {
     h1 {
-        padding: 30px 0px 25px 40px;
+        padding: 30px 0px 25px 1.5em;
         font-size: 50px;
         font-weight: 500;
     }
     
     .overskrift {
         line-height: 2.5em;
-        padding: 0px 0px 25px 40px;
+        padding: 0px 0px 25px 4.8em;
     }
     
     
@@ -534,16 +534,16 @@ figure img {
     
     
     .drikke-overskrift {
-        padding: 120px 35px 40px;
+        padding: 120px 4em 40px;
     }
     
     .menu-cake {
         line-height: 2.9em;
-        padding: 95px 35px 10px;
+        padding: 95px 4em 10px;
     }
     
     .menu-cakes {
-        padding: 12px 35px;
+        padding: 12px 4em;
         line-height: 5em;
     }
     
@@ -551,7 +551,7 @@ figure img {
     .menu-coffee {
         line-height: 4em;
         margin: 0 auto; /* Centrerer artiklen på siden */
-        padding: 35px;
+        padding: 35px 0px 35px 4em;
     }
     
     .undermenu-coffee {
@@ -580,3 +580,4 @@ figure img {
         padding-top: 80px;
     }
 }
+  
