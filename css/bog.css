@@ -226,6 +226,10 @@ ul {
     font-weight: 600;
 }
 
+.kursiv {
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     /*footer css til mobil*/
 
