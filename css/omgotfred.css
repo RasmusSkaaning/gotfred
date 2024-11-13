@@ -156,3 +156,63 @@ body {
         white-space: nowrap;
     }
 }
+/* Global styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f4f2e9;
+}
+
+/* Main content styling */
+.content {
+    padding: 15px;
+}
+
+/* Image and text styling */
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.intro p, .about p {
+    font-size: 16px;
+    color: #333399;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+blockquote {
+    font-style: italic; 
+    color: #333399;
+    margin: 15px 0;
+    font-weight: 550;
+}
+
+/* Section spacing */
+.about {
+    margin-top: 20px;
+}
+
+/* Responsive adjustments for iPhone */
+@media (max-width: 760px) {
+    .main-image {
+        margin-top: 10px;
+    }
+
+    .intro p, .about p, blockquote {
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .main-image {
+        margin-top: 10px;
+    }
+
+    .intro p, .about p, blockquote {
+        font-size: 14px;
+    }
+}
+

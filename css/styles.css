@@ -65,7 +65,7 @@ justify-content: space-between;
 }
 .book  {
   flex: 1;
-  line-height: 4;
+  line-height: 3;
 }
 .intro .side-image {
   margin-left: -150px;
