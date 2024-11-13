@@ -104,7 +104,6 @@ body {
     border-radius: 10px;
 }
 
-
 /* Tablet og mobil: Skift til burger-menu */
 @media (max-width: 1024px) {
     .navbar-menu {
@@ -147,7 +146,7 @@ body {
 }
 
 /* Mobil justering */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
     }
@@ -169,63 +168,77 @@ body {
 
 
 
-  
-
-
-
 /* Mobile */
 @media screen and (max-width: 768px ) {
+
+main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 h1 {
-    padding: 14px;
-    font-size: 40px;
-    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .overskrift {
-    line-height: 2.5em;
-    padding: 17px;
-}
-
-
-h4 {
-    font-weight: 400;
-    font-size: 30px;
+    line-height: 1.5rem;
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: 350;
     font-size: 14px;
 }
 
-h5 {
-    font-weight: 400;
-    font-size: 20px;
+h4 {
+    font-size: 30px;
+    font-weight: 300;
 }
 
-p {
+.mellemrum {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.fed-overskrift {
+    padding-top: 40px;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 550;
+    font-size: 12px;
+}
+
+h5 {
     font-weight: 300;
-    font-size: 15px;
-    line-height: 2.5em;
+    font-size: 18px;
 }
 
 .grid-cakes {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 kolonner */
     gap: 30px;
-    padding: 20px;
+}
+
+.gridcakes p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2.5em;
 }
 
 .grid-coffee {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 kolonner */
     gap: 30px;
-    padding: 20px;
 }
 
 figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 figure p:first-child {
@@ -245,10 +258,8 @@ figure p:nth-child(3) {
 /* Style til vælg-knappen */
 .choose-button {
     font-size: 1em;
-    font-weight: bold;
-    color: #334e92;
+    font-weight: 500;
     cursor: pointer;
-    text-decoration: underline;
     margin-top: 10px;
 }
 
@@ -258,34 +269,23 @@ figure img {
     margin: 10px 0;
 }
 
-/* Justering af mellemrum og margener */
-.grid-cakes p {
-    margin: 0;
-}
-
-
-.drikke-overskrift {
-    padding: 14px;
-}
-
 .menu-cake {
-    line-height: 2.5em;
-    padding: 42px 14px 10px;
+    line-height: 2.5rem;
 }
 
-.menu-cakes {
-    padding: 10px 14px;
+.kage-titel {
+    font-weight: 550;
+    padding-top: 30px;
+    padding-bottom: 5px;
 }
 
+.beskrivelse {
+    font-weight: 300;
+}
 
 .menu-coffee {
+    margin-top: 40px;
     line-height: 2.4em;
-    margin: 0 auto; /* Centrerer artiklen på siden */
-    padding: 14px;
-}
-
-.undermenu-coffee {
-    padding: 12px
 }
 
 
@@ -301,7 +301,7 @@ figure img {
 /* Styling af drikkevarer og priser */
 .item {
     display: grid;
-    grid-template-columns:  40% 30%;
+    grid-template-columns:  50% 30%;
     gap: 5px;
     
 }
