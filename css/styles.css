@@ -355,6 +355,8 @@ body {
     grid-template-columns: 1.3fr 1fr;
   }
 
+  /* footer sektion til laptop*/
+
   .footer-section {
     margin-left: 6rem;
     margin-right: 6rem;
