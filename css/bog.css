@@ -15,12 +15,6 @@
     padding-top: 20px;
     padding-bottom: 50px;
     padding-right: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Sørger for, at navbaren er øverst i stacking order */
-    background-color: #f4f2e9; /* Sørg for, at baggrunden er ensartet */
-    padding-top: 20px;
-    padding-bottom: 20px; /* Justér padding for at reducere højden, når den er sticky */
 }
 
 .navbar-logo img {
