@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,53 @@
 
   <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
   <header>
-    <nav>
-      <img src="img/forside/logo.webp" alt="Gotfred Logo" class="logo">
-      <a href="#menu">Menu & Bestilling</a>
-      <a href="#bog">Vores Bog</a>
-      <a href="#om">Om Gotfred</a>
-      <a href="#faq">FAQ</a>
+      <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo">
+        </a>
+
+        <!-- Burger-menu checkbox og ikon -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <label for="burger-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navigation menu -->
+        <ul class="navbar-menu">
+            <li>
+                <a href="menu.html">MENU & BESTILLING</a>
+                <ul class="dropdown">
+                    <li><span>Arrangement kager</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="bog.html">VORES BOG</a>
+            </li>
+            <li>
+                <a href="omgodfred.html">OM GOTFRED</a>
+                <ul class="dropdown">
+                    <li><span>Gotfreds historie</span></li>
+                    <li><span>Kontakt os</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+                <ul class="dropdown">
+                    <li><span>Hvordan bestiller man</span></li>
+                    <li><span>Åbningstider og siddepladser i caféen</span></li>
+                    <li><span>Allergener</span></li>
+                </ul>
+            </li>
+        </ul>
+
+        <section class="navbar-icon">
+            <img src="/img/forside/ovn.webp" alt="Ovn Logo">
+        </section>
     </nav>
   </header>
 
@@ -29,21 +69,28 @@
 
   <main>
     <section class="intro">
-      <div class="text">
+      <article class="text">
         <p>Velkommen til Gotfred Bageri på Havnegade i Aarhus – hvor nordisk æstetik møder klassisk patisserie. Vi skaber smukke, håndlavede portionskager med komplekse smagsnuancer, lavet helt fra bunden. Bag bageriet står Sonia Pedersen og chefkonditor Sofie Jakobsen, som deler en passion for detalje og smag.</p>
-        <p>Med seks faste kager og en ny sæsonkage hver måned byder vi på unikke kageoplevelser, inspireret af både naturen og årstiden. Tag din kage med hjem, eller nyd den i vores hyggelige bageri. Gotfred Bageri – en kærlighedserklæring til kager.</p>
-      </div>
-      <img src="img/forside/closeupafkager.webp" alt="Kager på bordet" class="side-image">
+        <p> Med seks faste kager og en ny sæsonkage hver måned byder vi på unikke kageoplevelser, inspireret af både naturen og årstiden. Tag din kage med hjem, eller nyd den i vores hyggelige bageri. Gotfred Bageri – en kærlighedserklæring til kager.</p>
+      </article>
+
+      <article>
+      <img src="img/forside/kager.webp" alt="Kager på bordet" class="side-image">
+      </article>
     </section>
     
-
     <section class="book">
-      <p>Nordisk Patisserie kombinerer fransk kagetradition med et nordisk twist i smag og æstetik. Skrevet af Sonia Pedersen og Sofie Jakobsen, kvinderne bag Gotfred Bageri, tilbyder bogen opskrifter, der guider dig fra grundelementer til færdige, smukke portionskager. En inspirerende bog for alle kageentusiaster – og den kan købes her hos Gotfred Bageri.</p>
-      <img src="img/forside/bog.webp" alt="Bog om kager" class="side-image">
+        <article class="text">
+          <p> Nordisk Patisserie kombinerer fransk kagetradition med et nordisk twist i smag og æstetik. Skrevet af Sonia Pedersen og Sofie Jakobsen, kvinderne bag Gotfred Bageri, tilbyder bogen opskrifter, der guider dig fra grundelementer til færdige, smukke portionskager. En inspirerende bog for alle kageentusiaster – og den kan købes her hos Gotfred Bageri.</p>
+        </article>
+        
+        <article>
+          <img src="img/forside/bog.webp" alt="Bog om kager" class="side-image">
+        </article>
     </section>
   </main>
-  <footer style="background-color: #f5f0e1; padding: 40px 20px; font-family: Arial, sans-serif; color: #2f4f85; font-size: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; text-align: left;">
-    
+
+  <footer class="footer-section">
     <section>
       <p style="font-weight: bold; margin: 0;">BASE</p>
       <p style="margin: 5px 0;">GOTFRED</p>
