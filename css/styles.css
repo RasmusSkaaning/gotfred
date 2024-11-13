@@ -217,7 +217,7 @@ body {
   }
 
   .gotfred-navn {
-    font-weight: 600;
+    font-weight: 650;
     font-size: 30px;
   }
 
@@ -317,7 +317,7 @@ body {
   }
 
   .gotfred-navn {
-    font-weight: 600;
+    font-weight: 650;
     font-size: 30px;
   }
 
@@ -355,18 +355,28 @@ body {
     grid-template-columns: 1.3fr 1fr;
   }
 
-
-  footer {
-    padding: 40px 20px;
-    font-family: "Work Sans";
-    color: #44519f;
+  .footer-section {
+    margin-left: 6rem;
+    margin-right: 6rem;
     font-size: 16px;
+    line-height: 1.5;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+    gap: 60px;
     text-align: left;
+  }
+
+  .gotfred-sektion {
+    margin-top: 0;
+  }
+
+  .overskrift {
+    padding-top: 1.5rem;
+  }
+
+  .gotfred-navn {
+    font-weight: 650;
+    font-size: 40px;
   }
 
 }
