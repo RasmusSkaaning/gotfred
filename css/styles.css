@@ -148,7 +148,6 @@ body {
   }
 }
 
-
 /* Mobil justering */
 @media (max-width: 768px) {
   .navbar {
@@ -235,19 +234,55 @@ body {
   }
 
   main {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 40px;
+    display: grid;
+    gap: 50px;
+  }
+  
+  .intro, .book {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .intro {
+    grid-template-areas:"image text";
+    gap: 50px;
+  }
+  
+  .tekst1 {
+    grid-area: text; /* Placerer teksten i højre kolonne */
+  }
+  
+  .intro .side-image {
+    grid-area: image; /* Placerer billedet i venstre kolonne */
+    width: 100%;
+  }
+  
+  .book {
+    grid-template-areas: "text image";
+    gap: 50px;
+  }
+  
+  .tekst2 {
+    grid-area: text; /* Placerer teksten i venstre kolonne */
+  }
+  
+  .book .side-image {
+    grid-area: image; /* Placerer billedet i højre kolonne */
+    width: 100%;
   }
 
   .text {
-    font-size: large;
-    line-height: 1.5;
-    margin: 2rem 0;
+      font-size: 17px;
+      line-height: 1.5;
   }
 
   .side-image {
-    width: 100%;
+      width: 100%;
   }
 
   /*footer css til tablet*/
@@ -262,7 +297,6 @@ body {
     gap: 30px;
     text-align: left;
   }
-
 
   .bold {
     font-weight: 500;
