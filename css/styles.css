@@ -236,7 +236,7 @@ body {
   main {
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-top: 40px;
+    margin-top: 6rem;
     display: grid;
     gap: 50px;
   }
@@ -333,27 +333,29 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .hero img {
-    width: 100%;
-    height: auto; max-height: 91vh;
-  }
-
+  
   main {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 40px;
+    margin-top: 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: grid;
+    gap: 8rem;
   }
 
   .text {
-    font-size: large;
-    line-height: 1.5;
-    margin: 2rem 0;
+    font-size: 20px;
+    line-height: 2;
   }
 
-  .side-image {
-    width: 100%;
-  
+  .intro {
+    grid-template-columns: 1fr 1.3fr;
   }
+  
+  .book {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+
   footer {
     padding: 40px 20px;
     font-family: "Work Sans";
