@@ -14,9 +14,56 @@
 </head>
 
 <body>
-<header>
-<h1>Kager</h1>
-</header>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="/img/forside/logo.webp" alt="Gotfred Aarhus Logo">
+            </a>
+
+            <!-- Burger-menu checkbox og ikon -->
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation menu -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="menu.html">MENU & BESTILLING</a>
+                    <ul class="dropdown">
+                        <li><span>Arrangement kager</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bog.html">VORES BOG</a>
+                </li>
+                <li>
+                    <a href="omgotfred.html">OM GOTFRED</a>
+                    <ul class="dropdown">
+                        <li><span>Gotfreds historie</span></li>
+                        <li><span>Kontakt os</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                    <ul class="dropdown">
+                        <li><span>Hvordan bestiller man</span></li>
+                        <li><span>Åbningstider og siddepladser i caféen</span></li>
+                        <li><span>Allergener</span></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <section class="navbar-icon">
+                <img src="/img/forside/ovn.webp" alt="Ovn Logo">
+            </section>
+        </nav>
+
+
+    <h1>Kager</h1>
+    </header>
 
 <aside class="overskrift">
 <h3>Online forudbestilling til afhentning - min 4. stk</h3>
@@ -170,7 +217,7 @@
                 <p class="coffee">13. Te</p>
                 <p class="price">32 kr</p>
             </aside>
-
+        <aside class="over-item">
             <aside class="item">
                 <p cslass="coffee">Citronlemonade</p>
                 <p class="price">40 kr</p>
@@ -189,6 +236,7 @@
             <aside class="item">
                 <p class="coffee"> Fersken-iste</p>
                 <p class="price">40 kr</p>
+        </aside>
             </aside>
         </aside>
     </article>
