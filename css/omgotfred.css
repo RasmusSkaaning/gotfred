@@ -166,53 +166,89 @@ body {
 
 /* Main content styling */
 .content {
-    padding: 15px;
+    padding: 20px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
-/* Image and text styling */
+/* Wrapper for primary text and image */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .main-image {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.intro p, .about p {
+.intro h2 {
+    color: #333399;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main-text, .additional-text, blockquote {
     font-size: 16px;
     color: #333399;
     line-height: 1.5;
     margin: 10px 0;
-    font-weight: 300;
 }
 
 blockquote {
-    font-style: italic; 
+    font-style: italic;
     color: #333399;
-    margin: 15px 0;
     font-weight: 550;
-}
-
-/* Section spacing */
-.about {
+    padding-left: 10px;
+    border-left: 3px solid #333399;
     margin-top: 20px;
 }
 
-/* Responsive adjustments for iPhone */
-@media (max-width: 760px) {
-    .main-image {
-        margin-top: 10px;
-    }
-
-    .intro p, .about p, blockquote {
-        font-size: 14px;
-    }
-}
+/* Tablet (min-width 768px) layout styling */
 @media (min-width: 768px) {
-    .main-image {
-        margin-top: 10px;
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for text and image */
+        grid-template-rows: auto auto; /* Two rows */
+        gap: 20px;
+        align-items: start;
     }
 
-    .intro p, .about p, blockquote {
-        font-size: 14px;
+    .main-text {
+        grid-column: 1 / span 1; /* First column */
+        grid-row: 1; /* First row */
+    }
+
+    .main-image {
+        grid-column: 2; /* Second column */
+        grid-row: 1; /* First row */
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .additional-text {
+        grid-column: 1 / span 2; /* Span both columns */
+        grid-row: 2; /* Second row, full width */
+        margin-top: 15px;
+    }
+
+    .main-text, .additional-text, blockquote {
+        font-size: 17px;
     }
 }
+
+/* Mobile layout adjustments */
+@media (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .additional-text {
+        margin-top: 20px;
+    }
+}
+
+
 
