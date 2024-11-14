@@ -449,7 +449,7 @@ body {
     .text-box-1, .text-box-2, .text-box-3, blockquote {
         color: #44519f; /* Samme farve som citatet */
         line-height: 1.6;
-
+        font-size: 24px;
     }
 
     /* Citat under øverste billede */
@@ -473,6 +473,7 @@ body {
         gap: 10px 20px;
         margin-top: 20px;
         align-items: start;
+       
     }
 
     .additional-content .image-box {
