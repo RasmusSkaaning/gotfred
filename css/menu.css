@@ -9,6 +9,7 @@ body {
     background-color: #f4f2e9; /* Baggrundsfarve */
     color: #44519f;
     font-family: 'work sans';
+    margin-bottom: 4rem;
   }
 
 
@@ -245,13 +246,8 @@ figure p:first-child {
 
 figure p:nth-child(3) {
     font-size: 1em;
-    margin: 5px 0;
+    margin: 5px 32px;
   }
-
-figure p:nth-child(3) {
-  font-size: 1em;
-  margin: 5px 0;
-}
 
 /* Style til vælg-knappen */
 .choose-button {
@@ -259,6 +255,7 @@ figure p:nth-child(3) {
     font-weight: 500;
     cursor: pointer;
     margin-top: 10px;
+    margin-left: 29px;
 }
 
 figure img {
@@ -269,6 +266,10 @@ figure img {
 
 .menu-cake {
     line-height: 2.5rem;
+}
+
+.menu-drink {
+    display: none;
 }
 
 .kage-titel {
@@ -315,6 +316,8 @@ figure img {
     color: #44519f;
     font-size: 16px;
     line-height: 1.5;
+    padding-left: 2em;
+    padding-top: 2em;
   }
 
   .footer-section a {
@@ -322,11 +325,11 @@ figure img {
     text-decoration: underline; 
   }
 
-  .overskrift {
+  .overskrift-footer {
     padding-top: 1.5rem;
   }
 
-  .bold {
+  .bold-footer {
     font-weight: 500;
   }
 
@@ -335,7 +338,7 @@ figure img {
     font-size: 30px;
   }
 
-  .mellemrum {
+  .mellemrum-text {
     padding-top: 1rem;
   }
 }
@@ -422,20 +425,17 @@ figure img {
     
     figure p:nth-child(3) {
         font-size: 1em;
-        margin: 5px 0;
+        margin: 5px 53px;
       }
     
-    figure p:nth-child(3) {
-      font-size: 1em;
-      margin: 5px 0;
-    }
-    
+
     /* Style til vælg-knappen */
     .choose-button {
         font-size: 1em;
         font-weight: 500;
         cursor: pointer;
         margin-top: 10px;
+        margin-left: 48px;
     }
     
     
@@ -464,6 +464,10 @@ figure img {
         margin-top: 40px;
         line-height: 2.4em;
     }
+    
+    .menu-drink {
+        display: none;
+    }
 
     .coffee {
         display: inline-block;
@@ -487,6 +491,9 @@ figure img {
     }
 
 
+
+
+/*footer*/
     .footer-section {
         font-family: "Work Sans";
         color: #44519f;
@@ -496,7 +503,7 @@ figure img {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         text-align: left;
-        margin-top: 3rem;
+        margin-top: 8em;
         padding-left: 4em;
     }
 
@@ -509,7 +516,7 @@ figure img {
         padding-top: 1.5rem;
     }
 
-    .bold {
+    .bold-footer {
         font-weight: 500;
     }
 
@@ -518,7 +525,7 @@ figure img {
         font-size: 30px;
     }
 
-    .mellemrum {
+    .mellemrum-text {
         padding-top: 1rem;
     }
 
@@ -547,7 +554,7 @@ figure img {
         font-weight: 300;
     }    
     
-    .overskrift-kager {
+    .overskrift {
         line-height: 2rem;
     }
 
@@ -571,7 +578,7 @@ figure img {
         font-weight: 500;
     }
     
-    .bold {
+    .bold-footer {
         font-weight: 550;
         font-size: 20px;
     }
@@ -605,13 +612,9 @@ figure img {
     
     figure p:nth-child(3) {
         font-size: 1em;
-        margin: 5px 0;
+        margin: 5px 55px;
       }
     
-    figure p:nth-child(3) {
-      font-size: 1em;
-      margin: 5px 0;
-    }
     
     /* Style til vælg-knappen */
     .choose-button {
@@ -619,6 +622,7 @@ figure img {
         font-weight: 500;
         cursor: pointer;
         margin-top: 10px;
+        margin-left: 52px;
     }
     
     
@@ -642,10 +646,30 @@ figure img {
         font-weight: 300;
     }
 
-        
+    .grid-columm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 60px;
+    }
+
+    .grid-drink {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 60px;
+    }
+
+    .menu-drink {
+        margin-top: 87px;
+        display: block;
+    }
+
     .menu-coffee {
         margin-top: 40px;
         line-height: 2.4em;
+    }
+
+    .hide-text {
+        display: none;
     }
 
     .coffee {
@@ -669,6 +693,8 @@ figure img {
         padding-top: 40px;
     }
 
+
+
     /* footer sektion */
     .footer-section {
         margin-right: 6rem;
@@ -685,7 +711,7 @@ figure img {
         margin-top: 0;
     }
 
-    .overskrift {
+    .overskrift-footer {
         padding-top: 1.5rem;
     }
 
