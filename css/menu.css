@@ -13,7 +13,6 @@ body {
 
 
 /*navbar*/
-
 .navbar {
     display: flex;
     align-items: center;
@@ -168,6 +167,11 @@ body {
 
 
 
+
+
+
+
+
 /* Mobile */
 @media screen and (max-width: 768px ) {
 
@@ -303,7 +307,41 @@ figure img {
     padding-top: 40px;
 }
 
+
+ /*footer css til mobil*/
+
+ .footer-section {
+    font-family: "Work Sans";
+    color: #44519f;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .footer-section a {
+    color: #44519f;
+    text-decoration: underline; 
+  }
+
+  .overskrift {
+    padding-top: 1.5rem;
+  }
+
+  .bold {
+    font-weight: 500;
+  }
+
+  .gotfred-navn {
+    font-weight: 650;
+    font-size: 30px;
+  }
+
+  .mellemrum {
+    padding-top: 1rem;
+  }
 }
+
+
+
 
 /* Tablet */
 @media screen and (min-width: 768px ) {
@@ -448,7 +486,54 @@ figure img {
         padding-top: 40px;
     }
 
+
+    .footer-section {
+        font-family: "Work Sans";
+        color: #44519f;
+        font-size: 16px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: left;
+        margin-top: 3rem;
+        padding-left: 4em;
+    }
+
+    .footer-section a {
+        color: #44519f;
+        text-decoration: underline; 
+    }
+
+    .overskrift {
+        padding-top: 1.5rem;
+    }
+
+    .bold {
+        font-weight: 500;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 30px;
+    }
+
+    .mellemrum {
+        padding-top: 1rem;
+    }
+
+    .gotfred-sektion {
+        padding-top: 0; /* Fjerner den ekstra padding */
+        margin-top: -5rem; /* Justerer positionen opad */
+    }
 }
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1023px ) {
     main {
@@ -584,5 +669,29 @@ figure img {
         padding-top: 40px;
     }
 
+    /* footer sektion */
+    .footer-section {
+        margin-right: 6rem;
+        font-size: 16px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+        gap: 60px;
+        text-align: left;
+        padding-left: 4em;
+    }
+
+    .gotfred-sektion {
+        margin-top: 0;
+    }
+
+    .overskrift {
+        padding-top: 1.5rem;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 40px;
+    }
 }
   
