@@ -308,9 +308,9 @@ figure img {
 }
 
 
- /*footer css til mobil*/
+/*footer css til mobil*/
 
- .footer-section {
+.footer-section {
     font-family: "Work Sans";
     color: #44519f;
     font-size: 16px;
@@ -547,7 +547,7 @@ figure img {
         font-weight: 300;
     }    
     
-    .overskrift {
+    .overskrift-kager {
         line-height: 2rem;
     }
 
