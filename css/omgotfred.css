@@ -220,7 +220,7 @@ body {
 
     /* Specifik styling for tekstblokke på mobil */
     .text-box-1, .text-box-2, .text-box-3, blockquote {
-        color: #333399; /* Samme farve som citatet */
+        color: #44519f; /* Samme farve som citatet */
         line-height: 1.6;
     }
 
@@ -364,7 +364,6 @@ body {
         max-width: 850px;
     }
 
-<<<<<<< HEAD
     /* Ny sektion stacket vertikalt på mobil */
     .additional-content {
         display: flex;
@@ -375,15 +374,6 @@ body {
     /* Specifik styling for tekstblokke på mobil */
     .text-box-1, .text-box-2, .text-box-3, blockquote {
         color: #44519f; /* Samme farve som citatet */
-=======
-    /* Anden tekstblok til venstre under øverste */
-    .text-box-2 {
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 24px;
-        margin: 0;
-        margin-top: -15rem;
->>>>>>> 172c042fa23c32a6b3ea55e75b3c6aa874a93f5d
         line-height: 1.6;
 
     }
@@ -393,10 +383,10 @@ body {
         grid-column: 2;
         grid-row: 2;
         font-style: italic;
-        color: #333399;
+        color: #44519f;
         font-weight: 550;
         padding-left: 10px;
-        border-left: 3px solid #333399;
+        border-left: 3px solid #44519f;
         font-size: 24px;
         line-height: 1.6;
         margin: 0;
@@ -427,7 +417,7 @@ body {
         grid-row: 1;
         font-size: 24px;
         line-height: 1.6;
-        color: #333399;
+        color: #44519f;
         margin: 0;
     }
 }
