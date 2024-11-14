@@ -137,7 +137,7 @@ body {
 }
 
 /* Mobil justering */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
     }
@@ -170,8 +170,6 @@ body {
     margin-bottom: 15px;
 }
 
-
-
 .content {
     padding: 20px;
     max-width: 768px;
@@ -188,6 +186,48 @@ body {
 .main-image {
     width: 100%;
     margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .main-image, .text-content {
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Ny sektion stacket vertikalt på mobil */
+    .additional-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Specifik styling for tekstblokke på mobil */
+    .text-box-1, .text-box-2, .text-box-3, blockquote {
+        color: #333399; /* Samme farve som citatet */
+        line-height: 1.6;
+    }
+
+    .side-image, .text-box-3 {
+        width: 100%; /* Fuld bredde for mobil */
+    }
+
+    blockquote {
+        font-style: italic;
+        font-weight: 550;
+    }
+    
 }
 
 /* Tablet (iPad) styling */
@@ -278,43 +318,100 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+
+@media (min-width: 1025px) {
+    .content {
+        max-width: 1200px;
+        padding: 0 100px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .content-wrapper {
-        flex-direction: column;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 1.6fr 1fr; /* To kolonner */
+        grid-template-rows: auto auto; /* To rækker */
+        gap: 10px 20px;
+        align-items: start;
     }
 
-    .navbar-menu {
-        display: none;
+    /* Øverste tekstblok til venstre */
+    .text-box-1 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 24px;
+        margin: 0;
+        line-height: 1.5;
     }
 
-    .burger-menu {
-        display: flex;
+    /* Øverste billede til højre */
+    .image-box {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+        margin: 0;
     }
 
-    .main-image, .text-content {
-        width: 100%; /* Full width for mobile */
+    .image-box img {
+        width: 200%;
+        max-width: 850px;
     }
 
-    /* Ny sektion stacket vertikalt på mobil */
-    .additional-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* Specifik styling for tekstblokke på mobil */
-    .text-box-1, .text-box-2, .text-box-3, blockquote {
-        color: #333399; /* Samme farve som citatet */
+    /* Anden tekstblok til venstre under øverste */
+    .text-box-2 {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 24px;
+        margin: 0;
+        margin-top: -15rem;
         line-height: 1.6;
+
     }
 
-    .side-image, .text-box-3 {
-        width: 100%; /* Fuld bredde for mobil */
+    /* Citat under øverste billede */
+    blockquote {
+        grid-column: 2;
+        grid-row: 2;
+        font-style: italic;
+        color: #333399;
+        font-weight: 550;
+        padding-left: 10px;
+        border-left: 3px solid #333399;
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Nedre sektion: billede til venstre */
+    .additional-content {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr; /* Samme kolonne-layout som øverste sektion */
+        gap: 10px 20px;
+        margin-top: 20px;
+        align-items: start;
+    }
+
+    .additional-content .image-box {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .additional-content .side-image {
+        width: 200%;
+        max-width: 550px;
+    }
+
+    /* Nedre sektion: tekst til højre for det nederste billede */
+    .additional-content .text-box-3 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #333399;
+        margin: 0;
     }
 }
-blockquote {
-    font-style: italic;
-    font-weight: 550;
-}
+
 
