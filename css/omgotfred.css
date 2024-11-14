@@ -233,6 +233,42 @@ body {
         font-style: italic;
         font-weight: 550;
     }
+     /*footer css til mobil*/
+
+     .footer-section p {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-section {
+        padding: 2rem;
+        font-family: "Work Sans";
+        color: #44519f;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .footer-section a {
+        color: #44519f;
+        text-decoration: underline; 
+    }
+
+    .overskrift {
+        padding-top: 1.5rem;
+    }
+
+    .bold {
+        font-weight: 500;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 30px;
+    }
+
+    .mellemrum {
+        padding-top: 1rem;
+    }
+
 }
 
 /* Tablet (iPad) styling */
@@ -322,6 +358,50 @@ body {
         color: #44519f; /* Farve opdateret til citatfarve */
         font-weight: 300;
     }
+    /*footer css til tablet*/
+
+  .footer-section {
+    margin: 3rem;
+    font-family: "Work Sans";
+    color: #44519f;
+    font-size: 16px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: left;
+  }
+  .footer-section p {
+    margin: 0;
+    padding: 0;
+    }
+  .footer-section a {
+    color: #44519f;
+    text-decoration: underline; 
+  }
+
+  .overskrift {
+    padding-top: 1.5rem;
+  }
+
+  .bold {
+    font-weight: 500;
+  }
+
+  .gotfred-navn {
+    font-weight: 650;
+    font-size: 30px;
+  }
+
+  .mellemrum {
+    padding-top: 1rem;
+  }
+
+  .gotfred-sektion {
+    padding-top: 0; /* Fjerner den ekstra padding */
+    margin-top: -5rem; /* Justerer positionen opad */
+}
+
 }
 
 
@@ -335,6 +415,8 @@ body {
         align-items: flex-start;
     }
 
+
+    
     .content-wrapper {
         display: grid;
         grid-template-columns: 1.6fr 1fr; /* To kolonner */
@@ -427,6 +509,37 @@ body {
         color: #44519f;
         margin-top: -30px;
     }
+
+     /* footer sektion til laptop*/
+
+  .footer-section {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-size: 16px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+    gap: 60px;
+    text-align: left;
+  }
+
+  .gotfred-sektion {
+    margin-top: 0;
+  }
+
+  .overskrift {
+    padding-top: 1.5rem;
+  }
+
+  .gotfred-navn {
+    font-weight: 650;
+    font-size: 40px;
+  }
+  .footer-section p {
+    margin: 0;
+    padding: 0;
+}
+
 }
 
 
