@@ -166,13 +166,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 /* Mobile */
 @media screen and (max-width: 768px ) {
 
@@ -493,7 +486,7 @@ figure img {
 
 
 
-/*footer*/
+/*footer til tablet*/
     .footer-section {
         font-family: "Work Sans";
         color: #44519f;
