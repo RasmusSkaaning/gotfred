@@ -164,91 +164,157 @@ body {
     background-color: #f4f2e9;
 }
 
-/* Main content styling */
+.intro h2 {
+    color: #333399; /* Ændrer overskriftens farve til citatfarven */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+
 .content {
     padding: 20px;
     max-width: 768px;
     margin: 0 auto;
 }
 
-/* Wrapper for primary text and image */
 .content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* iPhone og mindre skærme */
 .main-image {
     width: 100%;
-    border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.intro h2 {
-    color: #333399;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
+/* Tablet (iPad) styling */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+        max-width: 90%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
 
-.main-text, .additional-text, blockquote {
-    font-size: 16px;
-    color: #333399;
-    line-height: 1.5;
-    margin: 10px 0;
-}
-
-blockquote {
-    font-style: italic;
-    color: #333399;
-    font-weight: 550;
-    padding-left: 10px;
-    border-left: 3px solid #333399;
-    margin-top: 20px;
-}
-
-/* Tablet (min-width 768px) layout styling */
-@media (min-width: 768px) {
     .content-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns for text and image */
-        grid-template-rows: auto auto; /* Two rows */
+        grid-template-columns: 1fr 1fr; /* To kolonner til iPad */
+        grid-template-rows: auto auto auto auto; /* Fire rækker, med ekstra række til ny sektion */
         gap: 20px;
         align-items: start;
     }
 
-    .main-text {
-        grid-column: 1 / span 1; /* First column */
-        grid-row: 1; /* First row */
+    /* Første tekstblok i venstre kolonne */
+    .text-box-1 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 17px;
+        color: #333399; /* Farve opdateret til citatfarve */
+        line-height: 1.6;
     }
 
-    .main-image {
-        grid-column: 2; /* Second column */
-        grid-row: 1; /* First row */
+    /* Billede i højre kolonne */
+    .image-box {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .image-box img {
+        width: 100%;
+        max-width: 300px;
+        align-self: start;
+    }
+
+    /* Anden tekstblok - fuld bredde under første række */
+    .text-box-2 {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        font-size: 17px;
+        color: #333399; /* Farve opdateret til citatfarve */
+        line-height: 1.6;
+    }
+
+    /* Blokquote - fuld bredde i tredje række */
+    blockquote {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        font-style: italic;
+        color: #333399; /* Farve opdateret til citatfarve */
+        font-weight: 550;
+        padding-left: 10px;
+        border-left: 3px solid #333399;
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    /* Ny sektion med billede og tekst under citat */
+    .additional-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Billede til venstre, tekst til højre */
+        gap: 20px;
+        align-items: start;
+        grid-column: 1 / span 2; /* Strækker sig over begge kolonner */
+        grid-row: 4; /* Placér under citatet */
+    }
+
+    /* Billede til venstre i ny sektion */
+    .additional-content .image-box {
+        grid-column: 1;
+    }
+
+    .additional-content .side-image {
         width: 100%;
         max-width: 300px;
     }
 
-    .additional-text {
-        grid-column: 1 / span 2; /* Span both columns */
-        grid-row: 2; /* Second row, full width */
-        margin-top: 15px;
-    }
-
-    .main-text, .additional-text, blockquote {
+    /* Tekst til højre i ny sektion */
+    .additional-content .text-box-3 {
+        grid-column: 2;
         font-size: 17px;
+        line-height: 1.6;
+        color: #333399; /* Farve opdateret til citatfarve */
     }
 }
 
-/* Mobile layout adjustments */
 @media (max-width: 767px) {
     .content-wrapper {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        gap: 15px;
     }
-    
-    .additional-text {
-        margin-top: 20px;
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .main-image, .text-content {
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Ny sektion stacket vertikalt på mobil */
+    .additional-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Specifik styling for tekstblokke på mobil */
+    .text-box-1, .text-box-2, .text-box-3, blockquote {
+        color: #333399; /* Samme farve som citatet */
+        line-height: 1.6;
+    }
+
+    .side-image, .text-box-3 {
+        width: 100%; /* Fuld bredde for mobil */
     }
 }
-
-
+blockquote {
+    font-style: italic;
+    font-weight: 550;
+}
 
