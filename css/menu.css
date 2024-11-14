@@ -451,38 +451,51 @@ figure img {
 }
 
 @media screen and (min-width: 1023px ) {
+    main {
+        margin-left: 4rem;
+        margin-right: 3rem;
+    }
+
     h1 {
-        padding: 30px 0px 25px 1.5em;
-        font-size: 50px;
+        margin-top: 2rem;
+        font-size: 35px;
+        font-weight: 300;
+    }    
+    
+    .overskrift {
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-weight: 350;
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .mellemrum {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .fed-overskrift {
+        padding-top: 40px;
         font-weight: 500;
     }
     
-    .overskrift {
-        line-height: 2.5em;
-        padding: 0px 0px 25px 4.8em;
-    }
-    
-    
-    h4 {
-        font-weight: 400;
-        font-size: 30px;
-    }
-    
-    h3 {
-        font-weight: 400;
+    .bold {
+        font-weight: 550;
         font-size: 20px;
     }
     
     h5 {
         font-weight: 300;
-        font-size: 20px;
+        font-size: 25px;
     }
-    
-    p {
-        font-weight: 400;
-        font-size: 18px;
-    }
-    
+
     .grid-cakes {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
@@ -506,77 +519,70 @@ figure img {
     }
     
     figure p:nth-child(3) {
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 5px 0;
       }
-
+    
+    figure p:nth-child(3) {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    
     /* Style til vælg-knappen */
     .choose-button {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #334e92;
+        font-size: 1em;
+        font-weight: 500;
         cursor: pointer;
-        text-decoration: underline;
         margin-top: 10px;
     }
     
+    
     figure img {
-        max-width: 100px;
+        max-width: 150px;
         height: auto;
         margin: 10px 0;
     }
-    
-    /* Justering af mellemrum og margener */
-    .grid-cakes p {
-        margin: 0;
-    }
-    
-    
-    .drikke-overskrift {
-        padding: 120px 4em 40px;
-    }
-    
+
     .menu-cake {
-        line-height: 2.9em;
-        padding: 95px 4em 10px;
+        line-height: 2.5rem;
     }
-    
-    .menu-cakes {
-        padding: 12px 4em;
-        line-height: 5em;
+
+    .kage-titel {
+        font-weight: 550;
+        padding-top: 30px;
+        padding-bottom: 5px;
     }
-    
-    
+
+    .beskrivelse {
+        font-weight: 300;
+    }
+
+        
     .menu-coffee {
-        line-height: 4em;
-        margin: 0 auto; /* Centrerer artiklen på siden */
-        padding: 35px 0px 35px 4em;
+        margin-top: 40px;
+        line-height: 2.4em;
     }
-    
-    .undermenu-coffee {
-        padding-top: 20px
-    }
-    
 
     .coffee {
         display: inline-block;
     }
-    
+
     .price {
         display: inline-block;
         text-align: right;
     }
-    
+
     /* Styling af drikkevarer og priser */
     .item {
         display: grid;
-        grid-template-columns:  19% 30%;
+        grid-template-columns:  50% 30%;
         gap: 5px;
         
     }
 
     .over-item {
-        padding-top: 80px;
+        padding-top: 40px;
     }
+
 }
   
