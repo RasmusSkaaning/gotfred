@@ -222,6 +222,7 @@ body {
     .text-box-1, .text-box-2, .text-box-3, blockquote {
         color: #44519f; /* Samme farve som citatet */
         line-height: 1.6;
+        font-weight: 300;
     }
 
     .side-image, .text-box-3 {
@@ -232,43 +233,10 @@ body {
         font-style: italic;
         font-weight: 550;
     }
-
-    /*footer css til mobil*/
-
-    .footer-section {
-        font-family: "Work Sans";
-        color: #44519f;
-        font-size: 16px;
-        line-height: 1.5;
-        padding-left: 2em;
-        padding-top: 2em;
-    }
-
-    .footer-section a {
-        color: #44519f;
-        text-decoration: underline; 
-    }
-
-    .overskrift-footer {
-        padding-top: 1.5rem;
-    }
-
-    .bold-footer {
-        font-weight: 500;
-    }
-
-    .gotfred-navn {
-        font-weight: 650;
-        font-size: 30px;
-    }
-
-    .mellemrum-text {
-        padding-top: 1rem;
-    }
 }
 
 /* Tablet (iPad) styling */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px)  {
     .content {
         max-width: 90%;
         padding: 0 20px;
@@ -290,6 +258,7 @@ body {
         font-size: 17px;
         color: #44519f; /* Farve opdateret til citatfarve */
         line-height: 1.6;
+        font-weight: 300;
     }
 
     /* Billede i højre kolonne */
@@ -307,10 +276,10 @@ body {
     /* Anden tekstblok - fuld bredde under første række */
     .text-box-2 {
         grid-column: 1 / span 2;
-        grid-row: 2;
         font-size: 17px;
         color: #44519f; /* Farve opdateret til citatfarve */
         line-height: 1.6;
+        font-weight: 300;
     }
 
     /* Blokquote - fuld bredde i tredje række */
@@ -319,7 +288,6 @@ body {
         grid-row: 3;
         font-style: italic;
         color: #44519f; /* Farve opdateret til citatfarve */
-        font-weight: 550;
         padding-left: 10px;
         border-left: 3px solid #44519f;
         margin-top: 20px;
@@ -352,49 +320,8 @@ body {
         font-size: 17px;
         line-height: 1.6;
         color: #44519f; /* Farve opdateret til citatfarve */
+        font-weight: 300;
     }
-
-    /*footer til tablet*/
-    .footer-section {
-        font-family: "Work Sans";
-        color: #44519f;
-        font-size: 16px;
-        line-height: 1.5;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        text-align: left;
-        margin-top: 8em;
-        padding-left: 4em;
-    }
-
-    .footer-section a {
-        color: #44519f;
-        text-decoration: underline; 
-    }
-
-    .overskrift {
-        padding-top: 1.5rem;
-    }
-
-    .bold-footer {
-        font-weight: 500;
-    }
-
-    .gotfred-navn {
-        font-weight: 650;
-        font-size: 30px;
-    }
-
-    .mellemrum-text {
-        padding-top: 1rem;
-    }
-
-    .gotfred-sektion {
-        padding-top: 0; /* Fjerner den ekstra padding */
-        margin-top: -5rem; /* Justerer positionen opad */
-    }
-
 }
 
 
@@ -423,6 +350,7 @@ body {
         font-size: 24px;
         margin: 0;
         line-height: 1.5;
+        font-weight: 300;
     }
 
     /* Øverste billede til højre */
@@ -431,12 +359,16 @@ body {
         grid-row: 1;
         align-self: start;
         margin: 0;
+        width: 100%; /* Sørger for, at containeren fylder kolonnen */
     }
-
+    
     .image-box img {
-        width: 200%;
-        max-width: 850px;
+        width: 100%; /* Billedet fylder hele bredden af sin container */
+        max-width: 100%; /* Sørger for, at billedet kan strække sig op til containerens bredde */
+        height: auto; /* Bevarer billedets proportioner */
     }
+    
+    
 
     /* Ny sektion stacket vertikalt på mobil */
     .additional-content {
@@ -449,7 +381,7 @@ body {
     .text-box-1, .text-box-2, .text-box-3, blockquote {
         color: #44519f; /* Samme farve som citatet */
         line-height: 1.6;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* Citat under øverste billede */
@@ -458,10 +390,9 @@ body {
         grid-row: 2;
         font-style: italic;
         color: #44519f;
-        font-weight: 550;
         padding-left: 10px;
         border-left: 3px solid #44519f;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.6;
         margin: 0;
     }
@@ -482,7 +413,7 @@ body {
     }
 
     .additional-content .side-image {
-        width: 200%;
+        width: 100%;
         max-width: 550px;
     }
 
@@ -490,36 +421,11 @@ body {
     .additional-content .text-box-3 {
         grid-column: 2;
         grid-row: 1;
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: 300;
         line-height: 1.6;
         color: #44519f;
-        margin: 0;
-    }
-
-
-    /* footer sektion */
-    .footer-section {
-        margin-right: 6rem;
-        font-size: 16px;
-        line-height: 1.5;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* fire kolonner */
-        gap: 60px;
-        text-align: left;
-        padding-left: 4em;
-    }
-
-    .gotfred-sektion {
-        margin-top: 0;
-    }
-
-    .overskrift-footer {
-        padding-top: 1.5rem;
-    }
-
-    .gotfred-navn {
-        font-weight: 650;
-        font-size: 40px;
+        margin-top: -30px;
     }
 }
 
