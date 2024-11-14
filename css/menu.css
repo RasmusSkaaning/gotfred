@@ -67,7 +67,7 @@ body {
 
 .navbar-menu li:hover > .dropdown {
     display: block;
-    margin-left: -20px; /* Juster venstrejusteringen for at linje op med hovedmenuen */
+    margin-left: -20px; 
 }
 
 .navbar-menu .dropdown li span {
@@ -76,10 +76,10 @@ body {
     color: #44519f;
     font-weight: 350;
     font-size: 18px;
-    line-height: 1.5; /* Gør afstanden mellem linjerne mere harmonisk */
+    line-height: 1.5; 
 }
 
-/* Ovnen logo (højre ikon) */
+/* Ovnen logo */
 .navbar-icon img {
     height: 90px;
 }
@@ -104,7 +104,7 @@ body {
     border-radius: 10px;
 }
 
-/* Tablet og mobil: Skift til burger-menu */
+/* Skift til burger-menu på tablet og mobil*/
 @media (max-width: 1024px) {
     .navbar-menu {
         display: none;
@@ -217,7 +217,7 @@ h5 {
 .grid-cakes {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 kolonner */
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
     gap: 30px;
 }
 
@@ -685,7 +685,6 @@ figure img {
     .over-item {
         padding-top: 40px;
     }
-
 
 
     /* footer sektion */

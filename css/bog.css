@@ -56,14 +56,14 @@
     padding: 10px 0;
     list-style: none;
     margin: 0;
-    width: 220px; /* Fast bredde på desktop */
+    width: 220px; 
     white-space: normal;
     overflow: hidden;
 }
 
 .navbar-menu li:hover > .dropdown {
     display: block;
-    margin-left: -20px; /* Juster venstrejusteringen for at linje op med hovedmenuen */
+    margin-left: -20px; 
 }
 
 .navbar-menu .dropdown li span {
@@ -72,10 +72,10 @@
     color: #44519f;
     font-weight: 350;
     font-size: 18px;
-    line-height: 1.5; /* Gør afstanden mellem linjerne mere harmonisk */
+    line-height: 1.5; 
 }
 
-/* Ovnen logo (højre ikon) */
+/* Ovnen logo */
 .navbar-icon img {
     height: 90px;
 }
@@ -100,7 +100,7 @@
     border-radius: 10px;
 }
 
-/* Tablet og mobil: Skift til burger-menu */
+/* Skift til burger-menu til tablet om mobil */
 @media (max-width: 1024px) {
     .navbar-menu {
         display: none;
@@ -231,6 +231,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+    
     /*footer css til mobil*/
 
   .footer-section {
@@ -330,8 +331,8 @@ ul {
     }
 
     .gotfred-sektion {
-        padding-top: 0; /* Fjerner den ekstra padding */
-        margin-top: -5rem; /* Justerer positionen opad */
+        padding-top: 0; 
+        margin-top: -5rem; 
     }
    
 
@@ -341,7 +342,7 @@ ul {
 @media (min-width: 1024px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1.8fr; /* To kolonner: 1 del til billedet, 2 dele til tekst */
+        grid-template-columns: 1fr 1.8fr; /* To kolonner - 1 del til billedet, 1.8 dele til tekst */
         gap: 0;
     }
 
