@@ -4,20 +4,24 @@ body {
     padding: 0;
     background-color: #f4f2e9;
 }
+/*navbar*/
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f4f2e9;
-    padding: 10px 20px;
-}
-
-.navbar-logo img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+  }
+  
+  .navbar-logo img {
     height: 120px;
-}
-
-.navbar-menu {
+  }
+  
+  .navbar-menu {
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -25,24 +29,24 @@ body {
     list-style: none;
     margin-left: 30px;
     padding: 0;
-}
-
-.navbar-menu li {
+  }
+  
+  .navbar-menu li {
     position: relative;
-}
-
-.navbar-menu li a {
+  }
+  
+  .navbar-menu li a {
     text-decoration: none;
-    color: #333399;
-    font-weight: bold;
+    color: #44519f;
+    font-weight: 350;
     font-size: 20px;
     line-height: 60px;
     transition: all 0.2s ease-in-out;
     white-space: normal;
-}
-
-/* Dropdown-menu styling på desktop */
-.navbar-menu .dropdown {
+  }
+  
+  /* Dropdown-menu styling på desktop */
+  .navbar-menu .dropdown {
     display: none;
     position: absolute;
     top: 100%;
@@ -54,61 +58,61 @@ body {
     width: 220px; /* Fast bredde på desktop */
     white-space: normal;
     overflow: hidden;
-}
-
-.navbar-menu li:hover > .dropdown {
+  }
+  
+  .navbar-menu li:hover > .dropdown {
     display: block;
     margin-left: -20px; /* Juster venstrejusteringen for at linje op med hovedmenuen */
-}
-
-.navbar-menu .dropdown li span {
+  }
+  
+  .navbar-menu .dropdown li span {
     display: block;
     padding: 5px 20px;
-    color: #333399;
-    font-weight: normal;
+    color: #44519f;
+    font-weight: 350;
     font-size: 18px;
     line-height: 1.5; /* Gør afstanden mellem linjerne mere harmonisk */
-}
-
-/* Ovnen logo (højre ikon) */
-.navbar-icon img {
-    height: 100px;
-}
-
-/* Burger-menu styling */
-.burger-toggle {
+  }
+  
+  /* Ovnen logo (højre ikon) */
+  .navbar-icon img {
+    height: 90px;
+  }
+  
+  /* Burger-menu styling */
+  .burger-toggle {
     display: none;
-}
-
-.burger-menu {
+  }
+  
+  .burger-menu {
     display: none;
     flex-direction: column;
     gap: 8px;
     cursor: pointer;
-}
-
-.burger-menu span {
+  }
+  
+  .burger-menu span {
     display: block;
     width: 45px;
     height: 5px;
-    background-color: #333399;
+    background-color: #44519f;
     border-radius: 10px;
-}
-
-/* Tablet og mobil: Skift til burger-menu */
-@media (max-width: 1024px) {
+  }
+  
+  /* Tablet og mobil: Skift til burger-menu */
+  @media (max-width: 1024px) {
     .navbar-menu {
         display: none;
     }
-
+  
     .burger-menu {
         display: flex;
     }
-
+  
     .navbar-icon {
         display: none;
     }
-
+  
     .burger-toggle:checked + .burger-menu + .navbar-menu {
         display: flex;
         flex-direction: column;
@@ -121,7 +125,7 @@ body {
         padding: 10px 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
+  
     .navbar-menu li:hover > .dropdown {
         display: block;
         position: relative;
@@ -129,33 +133,33 @@ body {
         padding-left: 0;
         margin-top: 5px;
     }
-
+  
     .navbar-menu .dropdown li span {
         padding: 10px 20px;
         font-size: 18px;
     }
-}
-
-/* Mobil justering */
-@media (max-width: 600px) {
+  }
+  
+  /* Mobil justering */
+  @media (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
     }
-
+  
     .navbar-logo img {
         height: 90px;
     }
-
+  
     .burger-toggle:checked + .burger-menu + .navbar-menu {
         width: 240px;
         right: 20px;
         padding: 20px;
     }
-
+  
     .navbar-menu li a {
         white-space: nowrap;
     }
-}
+  }  
 /* Global styling */
 body {
     margin: 0;
@@ -165,12 +169,11 @@ body {
 }
 
 .intro h2 {
-    color: #333399; /* Ændrer overskriftens farve til citatfarven */
+    color: #44519f; /* Ændrer overskriftens farve til citatfarven */
     font-size: 24px;
     margin-bottom: 15px;
+
 }
-
-
 
 .content {
     padding: 20px;
@@ -188,94 +191,6 @@ body {
 .main-image {
     width: 100%;
     margin-bottom: 15px;
-}
-
-/* Tablet (iPad) styling */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .content {
-        max-width: 90%;
-        padding: 0 20px;
-        margin: 0 auto;
-    }
-
-    .content-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* To kolonner til iPad */
-        grid-template-rows: auto auto auto auto; /* Fire rækker, med ekstra række til ny sektion */
-        gap: 20px;
-        align-items: start;
-    }
-
-    /* Første tekstblok i venstre kolonne */
-    .text-box-1 {
-        grid-column: 1;
-        grid-row: 1;
-        font-size: 17px;
-        color: #333399; /* Farve opdateret til citatfarve */
-        line-height: 1.6;
-    }
-
-    /* Billede i højre kolonne */
-    .image-box {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .image-box img {
-        width: 100%;
-        max-width: 300px;
-        align-self: start;
-    }
-
-    /* Anden tekstblok - fuld bredde under første række */
-    .text-box-2 {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-        font-size: 17px;
-        color: #333399; /* Farve opdateret til citatfarve */
-        line-height: 1.6;
-    }
-
-    /* Blokquote - fuld bredde i tredje række */
-    blockquote {
-        grid-column: 1 / span 2;
-        grid-row: 3;
-        font-style: italic;
-        color: #333399; /* Farve opdateret til citatfarve */
-        font-weight: 550;
-        padding-left: 10px;
-        border-left: 3px solid #333399;
-        margin-top: 20px;
-        font-size: 17px;
-    }
-
-    /* Ny sektion med billede og tekst under citat */
-    .additional-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Billede til venstre, tekst til højre */
-        gap: 20px;
-        align-items: start;
-        grid-column: 1 / span 2; /* Strækker sig over begge kolonner */
-        grid-row: 4; /* Placér under citatet */
-    }
-
-    /* Billede til venstre i ny sektion */
-    .additional-content .image-box {
-        grid-column: 1;
-    }
-
-    .additional-content .side-image {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    /* Tekst til højre i ny sektion */
-    .additional-content .text-box-3 {
-        grid-column: 2;
-        font-size: 17px;
-        line-height: 1.6;
-        color: #333399; /* Farve opdateret til citatfarve */
-    }
 }
 
 @media (max-width: 767px) {
@@ -305,16 +220,307 @@ body {
 
     /* Specifik styling for tekstblokke på mobil */
     .text-box-1, .text-box-2, .text-box-3, blockquote {
-        color: #333399; /* Samme farve som citatet */
+        color: #44519f; /* Samme farve som citatet */
         line-height: 1.6;
     }
 
     .side-image, .text-box-3 {
         width: 100%; /* Fuld bredde for mobil */
     }
+
+    blockquote {
+        font-style: italic;
+        font-weight: 550;
+    }
+
+    /*footer css til mobil*/
+
+    .footer-section {
+        font-family: "Work Sans";
+        color: #44519f;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+
+    .footer-section a {
+        color: #44519f;
+        text-decoration: underline; 
+    }
+
+    .overskrift-footer {
+        padding-top: 1.5rem;
+    }
+
+    .bold-footer {
+        font-weight: 500;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 30px;
+    }
+
+    .mellemrum-text {
+        padding-top: 1rem;
+    }
 }
-blockquote {
-    font-style: italic;
-    font-weight: 550;
+
+/* Tablet (iPad) styling */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+        max-width: 90%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* To kolonner til iPad */
+        grid-template-rows: auto auto auto auto; /* Fire rækker, med ekstra række til ny sektion */
+        gap: 20px;
+        align-items: start;
+    }
+
+    /* Første tekstblok i venstre kolonne */
+    .text-box-1 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 17px;
+        color: #44519f; /* Farve opdateret til citatfarve */
+        line-height: 1.6;
+    }
+
+    /* Billede i højre kolonne */
+    .image-box {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .image-box img {
+        width: 100%;
+        max-width: 300px;
+        align-self: start;
+    }
+
+    /* Anden tekstblok - fuld bredde under første række */
+    .text-box-2 {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        font-size: 17px;
+        color: #44519f; /* Farve opdateret til citatfarve */
+        line-height: 1.6;
+    }
+
+    /* Blokquote - fuld bredde i tredje række */
+    blockquote {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        font-style: italic;
+        color: #44519f; /* Farve opdateret til citatfarve */
+        font-weight: 550;
+        padding-left: 10px;
+        border-left: 3px solid #44519f;
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    /* Ny sektion med billede og tekst under citat */
+    .additional-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Billede til venstre, tekst til højre */
+        gap: 20px;
+        align-items: start;
+        grid-column: 1 / span 2; /* Strækker sig over begge kolonner */
+        grid-row: 4; /* Placér under citatet */
+    }
+
+    /* Billede til venstre i ny sektion */
+    .additional-content .image-box {
+        grid-column: 1;
+    }
+
+    .additional-content .side-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Tekst til højre i ny sektion */
+    .additional-content .text-box-3 {
+        grid-column: 2;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #44519f; /* Farve opdateret til citatfarve */
+    }
+
+    /*footer til tablet*/
+    .footer-section {
+        font-family: "Work Sans";
+        color: #44519f;
+        font-size: 16px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: left;
+        margin-top: 8em;
+        padding-left: 4em;
+    }
+
+    .footer-section a {
+        color: #44519f;
+        text-decoration: underline; 
+    }
+
+    .overskrift {
+        padding-top: 1.5rem;
+    }
+
+    .bold-footer {
+        font-weight: 500;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 30px;
+    }
+
+    .mellemrum-text {
+        padding-top: 1rem;
+    }
+
+    .gotfred-sektion {
+        padding-top: 0; /* Fjerner den ekstra padding */
+        margin-top: -5rem; /* Justerer positionen opad */
+    }
+
 }
+
+
+@media (min-width: 1025px) {
+    .content {
+        max-width: 1200px;
+        padding: 0 100px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr; /* To kolonner */
+        grid-template-rows: auto auto; /* To rækker */
+        gap: 10px 20px;
+        align-items: start;
+    }
+
+    /* Øverste tekstblok til venstre */
+    .text-box-1 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 24px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    /* Øverste billede til højre */
+    .image-box {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+        margin: 0;
+    }
+
+    .image-box img {
+        width: 200%;
+        max-width: 850px;
+    }
+
+    /* Ny sektion stacket vertikalt på mobil */
+    .additional-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Specifik styling for tekstblokke på mobil */
+    .text-box-1, .text-box-2, .text-box-3, blockquote {
+        color: #44519f; /* Samme farve som citatet */
+        line-height: 1.6;
+        font-size: 24px;
+    }
+
+    /* Citat under øverste billede */
+    blockquote {
+        grid-column: 2;
+        grid-row: 2;
+        font-style: italic;
+        color: #44519f;
+        font-weight: 550;
+        padding-left: 10px;
+        border-left: 3px solid #44519f;
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Nedre sektion: billede til venstre */
+    .additional-content {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr; /* Samme kolonne-layout som øverste sektion */
+        gap: 10px 20px;
+        margin-top: 20px;
+        align-items: start;
+       
+    }
+
+    .additional-content .image-box {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .additional-content .side-image {
+        width: 200%;
+        max-width: 550px;
+    }
+
+    /* Nedre sektion: tekst til højre for det nederste billede */
+    .additional-content .text-box-3 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #44519f;
+        margin: 0;
+    }
+
+
+    /* footer sektion */
+    .footer-section {
+        margin-right: 6rem;
+        font-size: 16px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* fire kolonner */
+        gap: 60px;
+        text-align: left;
+        padding-left: 4em;
+    }
+
+    .gotfred-sektion {
+        margin-top: 0;
+    }
+
+    .overskrift-footer {
+        padding-top: 1.5rem;
+    }
+
+    .gotfred-navn {
+        font-weight: 650;
+        font-size: 40px;
+    }
+}
+
 
